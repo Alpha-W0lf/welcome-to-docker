@@ -1,0 +1,9 @@
+volumes:
+    log-volumes:
+services:
+    worker:
+        volumes:
+            - logs-volume:/usr/local/airflow/logs
+    webserver:
+        volumes:
+            - logs-volume:/usr/local/airflow/logs
